@@ -8,36 +8,30 @@
         :root { --primary: #0a2540; --accent: #0056b3; --text: #333; --light: #f8f9fa; --meta: #666; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); max-width: 900px; margin: 0 auto; padding: 40px 30px; background-color: #fff; }
         
-        /* Header & Logo Section */
         header { border-bottom: 2px solid var(--primary); padding-bottom: 20px; margin-bottom: 40px; }
         .logo-container { display: flex; flex-direction: column; }
-        .logo-main { font-size: 2.2em; font-weight: 800; color: var(--primary); letter-spacing: 1px; line-height: 1; }
-        .logo-sub { font-size: 0.95em; font-weight: 600; color: var(--meta); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 5px; }
+        .logo-main { font-size: 2.4em; font-weight: 800; color: var(--primary); letter-spacing: 1.5px; line-height: 1; }
+        .logo-sub { font-size: 0.9em; font-weight: 600; color: var(--meta); text-transform: uppercase; letter-spacing: 1px; margin-top: 8px; }
         
-        nav { margin-top: 20px; display: flex; gap: 25px; }
-        nav a { font-weight: 700; text-transform: uppercase; font-size: 0.85em; color: var(--text); text-decoration: none; transition: 0.2s; }
+        nav { margin-top: 25px; display: flex; gap: 30px; }
+        nav a { font-weight: 700; text-transform: uppercase; font-size: 0.8em; color: var(--text); text-decoration: none; transition: 0.2s; }
         nav a:hover { color: var(--accent); }
 
-        /* Hero / Mission */
-        .hero { margin: 60px 0; }
-        .hero h1 { font-size: 2.4em; color: var(--primary); margin-bottom: 20px; letter-spacing: -0.5px; }
-        .hero p { font-size: 1.15em; color: #444; max-width: 800px; text-align: justify; }
+        .hero { margin: 70px 0; }
+        .hero h1 { font-size: 2.2em; color: var(--primary); margin-bottom: 25px; letter-spacing: -0.5px; line-height: 1.2; }
+        .hero p { font-size: 1.1em; color: #444; max-width: 800px; text-align: justify; }
 
-        /* Methodology & Capabilities (The Engine) */
-        .section-title { font-size: 1.2em; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 10px; margin: 50px 0 25px; text-transform: uppercase; letter-spacing: 1px; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-        .card { padding: 25px; background: var(--light); border-left: 4px solid var(--primary); }
-        .card h3 { margin-top: 0; color: var(--primary); font-size: 1em; text-transform: uppercase; }
-        .card p { font-size: 0.9em; margin-bottom: 0; color: #555; }
+        .section-title { font-size: 1.1em; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 10px; margin: 60px 0 30px; text-transform: uppercase; letter-spacing: 1.5px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .card h3 { margin-top: 0; color: var(--primary); font-size: 1em; text-transform: uppercase; border-left: 3px solid var(--accent); padding-left: 12px; }
+        .card p { font-size: 0.9em; color: #555; margin-left: 15px; }
 
-        /* Monitor / News (The Observer) */
-        .news-item { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #f0f0f0; }
-        .news-date { font-size: 0.8em; font-weight: 700; color: var(--accent); text-transform: uppercase; }
-        .news-title { display: block; font-size: 1.15em; font-weight: 700; margin: 5px 0; color: var(--primary); text-decoration: none; }
-        .news-title:hover { text-decoration: underline; }
+        .news-item { margin-bottom: 30px; }
+        .news-date { font-size: 0.75em; font-weight: 800; color: var(--accent); text-transform: uppercase; }
+        .news-title { display: block; font-size: 1.2em; font-weight: 700; margin: 5px 0; color: var(--primary); text-decoration: none; }
         
-        footer { margin-top: 80px; padding-top: 30px; border-top: 1px solid #eee; font-size: 0.85em; color: var(--meta); }
-        .history-tag { display: inline-block; background: #eee; padding: 2px 8px; border-radius: 3px; font-weight: 600; margin-top: 10px; }
+        footer { margin-top: 100px; padding: 40px 0; border-top: 1px solid #eee; font-size: 0.85em; color: var(--meta); }
+        .contact-box { background: var(--light); padding: 20px; border-radius: 4px; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -48,48 +42,49 @@
         <div class="logo-sub">Berlin Institute for Digital Strategy</div>
     </div>
     <nav>
-        <a href="#analysis">Analysis</a>
+        <a href="#analysis">Strategic Analysis</a>
         <a href="#methodology">Methodology</a>
-        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <section class="hero">
-    <h1>Strategic Intelligence for the Digital Geopolitics Era.</h1>
-    <p>BIDS is an independent research initiative focused on the intersection of global cyber governance, digital sovereignty, and Sino-European strategic relations. We bridge International Relations theory with Computational Social Science to provide evidence-based insights.</p>
+    <h1>Data-Driven Intelligence for the New Digital Order.</h1>
+    <p>The Berlin Institute for Digital Strategy (BIDS) is an independent research hub at the intersection of International Relations and Computational Social Science. We provide evidence-based analysis on global cyber governance, digital sovereignty, and the evolving technological alignment between major powers.</p>
 </section>
 
-<h2 id="methodology" class="section-title">Our Capabilities</h2>
+<h2 id="methodology" class="section-title">Core Capabilities</h2>
 <div class="grid">
     <div class="card">
-        <h3>NLP Policy Auditing</h3>
-        <p>Utilizing Natural Language Processing to monitor longitudinal shifts in policy discourse and legislative frameworks across multi-lingual primary sources.</p>
+        <h3>Computational Auditing</h3>
+        <p>Utilizing high-scale NLP pipelines to audit legislative shifts and discursive trends in multi-lingual policy corpora.</p>
     </div>
     <div class="card">
-        <h3>Relational Mapping (SNA)</h3>
-        <p>Applying Social Network Analysis to track institutional alignments and identify critical nodes in global technology supply chains.</p>
+        <h3>Network Intelligence</h3>
+        <p>Applying relational analysis to map strategic dependencies and institutional alignments in global technology supply chains.</p>
     </div>
 </div>
 
-<h2 id="analysis" class="section-title">Latest Analysis & Briefings</h2>
+<h2 id="analysis" class="section-title">Selected Briefings</h2>
 <div class="news-item">
     <span class="news-date">Strategic Briefing | Mar 2026</span>
-    <a href="#" class="news-title">Mapping Sino-Russian Strategic Alignment in Cyber Governance</a>
-    <p style="font-size: 0.9em; color: #666;">A computational study of joint declarations and discursive convergence since 2022.</p>
+    <a href="#" class="news-title">Sino-Russian Strategic Complementarity in Cyber Governance</a>
+    <p style="font-size: 0.9em; color: #666;">Analyzing the discursive convergence in joint cyber-security frameworks.</p>
 </div>
 
 <div class="news-item">
-    <span class="news-date">Policy Report | Feb 2026</span>
-    <a href="#" class="news-title">Digital Sovereignty: Comparative Logics of EU and China</a>
-    <p style="font-size: 0.9em; color: #666;">Structural analysis of cross-border data flow regulations and their impact on market integration.</p>
+    <span class="news-date">Policy Analysis | Feb 2026</span>
+    <a href="#" class="news-title">Digital Sovereignty: Competing Logics of EU and China</a>
+    <p style="font-size: 0.9em; color: #666;">A comparative study of cross-border data flow and regulatory autonomy.</p>
 </div>
 
-<footer id="about">
-    <p><strong>Grace X. Yang</strong>, Director</p>
-    <p>Berlin Institute for Digital Strategy (BIDS)</p>
-    <p>Contact: <a href="mailto:Graceyang_pro@outlook.com">Graceyang_pro@outlook.com</a></p>
-    <div class="history-tag">Legacy: Digital Governance Observer (Est. Aug 2024)</div>
-    <p style="margin-top: 20px;">&copy; 2024-2026 BIDS. Based in Berlin, Germany.</p>
+<footer id="contact">
+    <div class="contact-box">
+        <p><strong>Grace X. Yang</strong> | Principal Investigator</p>
+        <p>Berlin Institute for Digital Strategy (BIDS)</p>
+        <p>Email: <a href="mailto:Graceyang_pro@outlook.com">Graceyang_pro@outlook.com</a></p>
+    </div>
+    <p style="margin-top: 30px;">&copy; 2026 BIDS | Berlin, Germany.</p>
 </footer>
 
 </body>
