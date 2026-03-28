@@ -5,63 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIDS | Berlin Institute for Digital Strategy</title>
     <style>
-        :root { --primary: #1a1a1a; --accent: #0056b3; --bg: #ffffff; --section-bg: #f9f9f9; --text: #333; --meta: #666; }
-        body { font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text); max-width: 960px; margin: 0 auto; padding: 60px 40px; background-color: var(--bg); }
-        header { border-bottom: 3px solid var(--primary); padding-bottom: 30px; margin-bottom: 60px; }
-        .logo-main { font-size: 2.8em; font-weight: 800; color: var(--primary); letter-spacing: -1px; line-height: 1; }
-        .logo-sub { font-size: 0.9em; font-weight: 600; color: var(--meta); text-transform: uppercase; letter-spacing: 2px; margin-top: 12px; }
-        nav { margin-top: 30px; display: flex; gap: 40px; }
-        nav a { font-weight: 700; text-transform: uppercase; font-size: 0.75em; color: var(--text); text-decoration: none; letter-spacing: 1px; }
-        nav a:hover { color: var(--accent); }
-        .hero { margin: 100px 0; border-left: 6px solid var(--primary); padding-left: 35px; }
-        .hero h1 { font-size: 2.2em; color: var(--primary); margin-bottom: 20px; line-height: 1.2; }
-        .section-title { font-size: 1em; color: var(--primary); border-bottom: 1px solid #ddd; padding-bottom: 10px; margin: 80px 0 40px; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 800; }
-        .methods-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; background: var(--section-bg); padding: 40px; border-radius: 8px; }
-        footer { margin-top: 120px; padding: 40px 0; border-top: 1px solid #eee; font-size: 0.85em; color: var(--meta); }
+        :root { --primary: #121212; --accent: #004a99; --bg: #ffffff; --subtle: #f4f7f9; --text: #2c3e50; --meta: #7f8c8d; }
+        body { font-family: "Inter", -apple-system, sans-serif; line-height: 1.8; color: var(--text); max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 20px; margin-bottom: 50px; display: flex; justify-content: space-between; align-items: flex-end; }
+        .logo-box { line-height: 1.1; }
+        .logo-main { font-size: 2.5em; font-weight: 900; letter-spacing: -1.5px; }
+        .logo-sub { font-size: 0.85em; text-transform: uppercase; letter-spacing: 1.5px; color: var(--meta); font-weight: 600; }
+        nav a { margin-left: 25px; text-decoration: none; font-size: 0.8em; font-weight: 700; text-transform: uppercase; color: var(--text); opacity: 0.7; }
+        nav a:hover { opacity: 1; color: var(--accent); }
+        
+        .hero { margin: 80px 0; border-left: 5px solid var(--accent); padding-left: 30px; }
+        .hero h1 { font-size: 2.4em; line-height: 1.2; color: var(--primary); margin-bottom: 15px; }
+        .hero p { font-size: 1.15em; max-width: 800px; color: #444; }
+
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 50px 0; }
+        .card { background: var(--subtle); padding: 30px; border-radius: 4px; border-top: 3px solid var(--primary); }
+        .card h3 { margin-top: 0; font-size: 1.1em; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* KSK Evidence Section */
+        .briefs-section { background: #fff; border: 1px solid #eee; padding: 30px; margin: 60px 0; }
+        .brief-tag { color: var(--accent); font-weight: 800; font-size: 0.7em; text-transform: uppercase; }
+        .brief-item { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #ddd; }
+
+        footer { margin-top: 100px; padding-top: 40px; border-top: 1px solid #eee; font-size: 0.9em; }
+        .impressum { background: #f9f9f9; padding: 20px; margin-top: 30px; font-size: 0.85em; line-height: 1.5; }
     </style>
 </head>
 <body>
+
 <header>
-    <div class="logo-main">BIDS</div>
-    <div class="logo-sub">Berlin Institute for Digital Strategy</div>
+    <div class="logo-box">
+        <div class="logo-main">BIDS</div>
+        <div class="logo-sub">Berlin Institute for Digital Strategy</div>
+    </div>
     <nav>
         <a href="index.html">Home</a>
-        <a href="research.html">Research & Publications</a>
+        <a href="research.html">Research</a>
         <a href="mailto:Graceyang_pro@outlook.com">Contact</a>
     </nav>
 </header>
+
 <section class="hero">
-    <h1>Independent Computational Research for Global Digital Governance.</h1>
-    <p>The <strong>Berlin Institute for Digital Strategy (BIDS)</strong> is a research-led initiative dedicated to auditing digital norms and geopolitical friction. We bridge <strong>International Relations</strong> theory with <strong>Computational Social Science</strong> to provide evidence-based insights.</p>
+    <h1>Computational Research on Global Cyber Governance.</h1>
+    <p>BIDS is an <strong>independent research-led initiative</strong> bridging International Relations theory with Computational Social Science. We specialize in NLP-based auditing of strategic narratives and digital norms in a multipolar world order.</p>
 </section>
-<h2 class="section-title">Institutional Methodology</h2>
-<div class="methods-grid">
-    <div class="method-item">
-        <h3>Computational Policy Auditing</h3>
-        <p>BIDS maintains proprietary <strong>Python-based pipelines</strong> for multi-lingual policy extraction, automating the detection of semantic shifts in official strategy documents.</p>
+
+<div class="grid">
+    <div class="card">
+        <h3>Proprietary NLP Pipelines</h3>
+        <p>Advanced Python workflows for multi-lingual policy extraction and ML-enhanced semantic shift detection in official discourse.</p>
     </div>
-    <div class="method-item">
-        <h3>Network Analysis (SNA)</h3>
-        <p>Utilizing relational data modeling to map institutional interdependencies and the diffusion of digital norms within international organizations.</p>
+    <div class="card">
+        <h3>Strategic Briefings</h3>
+        <p>Evidence-based insights for global governance stakeholders, grounded in large-scale textual corpora analysis.</p>
     </div>
 </div>
-<footer id="about">
-    <div class="pi-signature">Grace X. Yang</div>
-    <p><strong>Principal Investigator</strong>, Berlin Institute for Digital Strategy (BIDS)</p>
-    <p>BIDS is an independent, research-led organization committed to open-science principles.</p>
-    
-    <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #eee; font-size: 0.9em; line-height: 1.5;">
-        <strong>Legal Notice (Impressum)</strong><br>
-        Responsible for content according to § 5 TMG: <br>
-        Grace X. Yang <br>
-        [Adlershof, Berlin] <br>
-        Contact: <a href="mailto:Graceyang_pro@outlook.com" style="color: var(--accent); text-decoration: none;">Graceyang_pro@outlook.com</a>
-    </div>
 
-    <p style="margin-top: 40px; opacity: 0.5;">
-        &copy; 2024-2026 BIDS | Berlin, Germany. <br>
-        All independent research adheres to the ethics of academic inquiry.
-    </p>
+<h2 style="text-transform: uppercase; font-size: 1em; letter-spacing: 2px;">Latest Insights & Briefs (KSK Activity)</h2>
+<section class="briefs-section">
+    <div class="brief-item">
+        <span class="brief-tag">Analysis | March 2026</span><br>
+        <strong>Foundational vs. Functional: Competing Logics of Digital Sovereignty</strong>
+        <p style="font-size: 0.9em; margin-top: 5px;">A comparative NLP auditing of policy texts from Beijing and Brussels.</p>
+    </div>
+    <div class="brief-item">
+        <span class="brief-tag">Flash Report | Feb 2026</span><br>
+        <strong>Sino-Russian Strategic Alignment in the UN GGE</strong>
+        <p style="font-size: 0.9em; margin-top: 5px;">Tracking norm promotion and discursive synchronization in cyber governance.</p>
+    </div>
+</section>
+
+<footer>
+    <div style="font-weight: 800; font-size: 1.1em;">Grace X. Yang</div>
+    <p><strong>Principal Investigator</strong>, BIDS | Ph.D. Candidate, Freie Universität Berlin.</p>
+    
+    <div class="impressum">
+        <strong>Impressum (Legal Notice - TMG § 5)</strong><br>
+        Operator: Grace X. Yang<br>
+        Location: [Adlershof, Berlin]<br>
+        Contact: <a href="mailto:Graceyang_pro@outlook.com" style="color: var(--accent); text-decoration: none;">Graceyang_pro@outlook.com</a><br>
+        BIDS is an independent initiative dedicated to open-science and rigorous academic inquiry.
+    </div>
+    <p style="margin-top: 30px; opacity: 0.5;">&copy; 2024-2026 BIDS. All rights reserved.</p>
 </footer>
+
 </body>
 </html>

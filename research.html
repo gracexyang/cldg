@@ -3,79 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research & Publications | BIDS</title>
+    <title>Research Portfolio | BIDS</title>
     <style>
-        :root { --primary: #1a1a1a; --accent: #0056b3; --text: #333; --meta: #666; --section-bg: #f9f9f9; }
-        body { font-family: "Inter", sans-serif; line-height: 1.7; color: var(--text); max-width: 960px; margin: 0 auto; padding: 60px 40px; }
-        header { border-bottom: 3px solid var(--primary); padding-bottom: 30px; margin-bottom: 60px; }
-        nav { display: flex; gap: 40px; margin-top: 30px; }
-        nav a { font-weight: 700; text-transform: uppercase; font-size: 0.75em; color: var(--text); text-decoration: none; }
-        .section-title { font-size: 1.1em; color: var(--primary); border-bottom: 1px solid #ddd; padding-bottom: 10px; margin: 60px 0 30px; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 800; }
-        .project-card { margin-bottom: 40px; padding: 25px; border-radius: 4px; background: var(--section-bg); }
-        .project-meta { font-size: 0.8em; font-weight: 700; color: var(--accent); text-transform: uppercase; margin-bottom: 5px; display: block; }
-        .project-title { font-size: 1.3em; font-weight: 700; color: var(--primary); margin-bottom: 10px; display: block; }
-        .pub-item { margin-bottom: 30px; padding-left: 20px; border-left: 2px solid #eee; }
-        .pub-tag { font-size: 0.75em; font-weight: 800; color: var(--accent); text-transform: uppercase; margin-right: 10px; }
-        .venue { font-style: italic; font-weight: 600; color: #555; }
+        :root { --primary: #121212; --accent: #004a99; --text: #2c3e50; --meta: #7f8c8d; }
+        body { font-family: "Inter", sans-serif; line-height: 1.7; color: var(--text); max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 20px; margin-bottom: 50px; }
+        nav a { text-decoration: none; font-size: 0.8em; font-weight: 700; text-transform: uppercase; color: var(--text); }
+        
+        .section-title { font-size: 1em; border-bottom: 1px solid #eee; padding-bottom: 10px; margin: 60px 0 30px; text-transform: uppercase; letter-spacing: 2px; font-weight: 800; color: var(--primary); }
+        
+        .project-box { margin-bottom: 40px; border: 1px solid #eee; padding: 30px; transition: 0.3s; }
+        .project-box:hover { border-color: var(--accent); background: #fcfdfe; }
+        .project-label { font-size: 0.7em; font-weight: 800; color: var(--accent); text-transform: uppercase; margin-bottom: 10px; display: block; }
+        .project-name { font-size: 1.4em; font-weight: 800; color: var(--primary); margin-bottom: 10px; display: block; }
+
+        .pub-list { list-style: none; padding: 0; }
+        .pub-item { margin-bottom: 25px; padding-left: 20px; border-left: 3px solid #eee; }
+        .pub-year { font-weight: 800; color: var(--accent); margin-right: 10px; }
+        .venue { font-style: italic; color: #555; }
     </style>
 </head>
 <body>
+
 <header>
-    <div style="font-size: 2.2em; font-weight: 800;">BIDS Research Portfolio</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="research.html">Research & Publications</a>
+    <div style="font-size: 2em; font-weight: 900;">BIDS Research Portfolio</div>
+    <nav style="margin-top: 20px;">
+        <a href="index.html">← Back to Home</a>
     </nav>
 </header>
 
-<h2 class="section-title">Ongoing Research Initiatives</h2>
+<h2 class="section-title">Current Research Initiatives</h2>
 
-<div class="project-card">
-    <span class="project-meta">Strategic Initiative | Cyber Sovereignty</span>
-    <span class="project-title">The "Bandung Spirit" in Cyberspace: Leveraging NAM for Digital Norm-Setting</span>
-    <p>Tracking the discursive alignment between China and the Non-Aligned Movement (NAM) to understand the institutionalization of anti-hegemonic digital orders. </p>
+<div class="project-box">
+    <span class="project-label">Cyber Sovereignty | Sino-Russian Alignment </span>
+    <span class="project-name">Aligning for Cyber Sovereignty</span>
+    <p>A multi-year tracking study using ML-enhanced text analysis to measure discursive synchronization between China and Russia in global cyber governance forums.</p>
 </div>
 
-<div class="project-card">
-    <span class="project-meta">Geopolitical Alignment | Tech-Diplomacy</span>
-    <span class="project-title">Sino-Russian Cyber Sovereignty Alignment</span>
-    <p>Utilizing NLP-driven policy auditing to track the strategic synchronization between China and Russia in international cyber governance forums. </p>
+<div class="project-box">
+    <span class="project-label">Geopolitics | Open-Source Al </span>
+    <span class="project-name">The Openness Paradox</span>
+    <p>Investigating China's strategic use of Open-source AI as a tool for contesting international technological norms and achieving digital autonomy.</p>
 </div>
 
-<div class="project-card">
-    <span class="project-meta">Emerging Tech | Asymmetric Contestation</span>
-    <span class="project-title">Open-source AI as a Strategy of Contestation</span>
-    <p>A systemic investigation into China's open-source AI strategy. This initiative explores how "openness" is leveraged as an asymmetric tool in the technological competition between major powers.</p>
+<div class="project-box">
+    <span class="project-label">Global Governance | NAM & Bandung Spirit </span>
+    <span class="project-name">The Conceptualization of Digital Sovereignty</span>
+    <p>A corpus linguistic analysis of UNGA discourse and the institutionalization of anti-hegemonic digital orders among Non-Aligned Movement (NAM) states.</p>
 </div>
 
-<h2 class="section-title">Scientific Track Record (Publications)</h2>
+<h2 class="section-title">Peer-Reviewed Track Record</h2>
 
-<div class="pub-item">
-    <span class="pub-tag">Book Chapter | 2026</span>
-    <strong>Geopolitics, Knowledge Production, and the Chilling Effect: Chinese Academic Responses to the Russia-Ukraine War</strong>. 
-    In <span class="venue">Legal and Ethical Issues of Chilling Effect</span>, Springer International Publishing.
-</div>
+<ul class="pub-list">
+    <li class="pub-item">
+        <span class="pub-year">2026</span> <strong>Geopolitics and Self-Censorship: Chinese Academic Response to the Russia-Ukraine War</strong>. <span class="venue">Springer International Publishing</span>.
+    </li>
+    <li class="pub-item">
+        <span class="pub-year">2025</span> <strong>The Openness Paradox: Open-source AI and China's Quest for Cyber Sovereignty</strong>. <span class="venue">Dialogues on Digital Society (Sage)</span>.
+    </li>
+    <li class="pub-item">
+        <span class="pub-year">2025</span> <strong>Sino-Russian Cybersecurity Cooperation and the Digital Silk Road</strong>. <span class="venue">Routledge Handbook of BRI</span>.
+    </li>
+    <li class="pub-item">
+        <span class="pub-year">2024</span> <strong>World Internet Conference and China's Promotion of Cyber Sovereignty</strong>. <span class="venue">ELTE Law Journal</span>.
+    </li>
+</ul>
 
-<div class="pub-item">
-    <span class="pub-tag">Book Chapter | 2025</span>
-    <strong>Sino-Russian Cybersecurity Cooperation in a Multipolar World Order: Implications for the Digital Silk Road</strong>. 
-    In <span class="venue">Routledge Handbook of China's Belt and Road Initiative in Eurasia</span>, pp. 150-168.
-</div>
-
-<div class="pub-item">
-    <span class="pub-tag">Journal Article | 2025</span>
-    <strong>The Openness Paradox: Open-source AI and China's Quest for Cyber Sovereignty</strong>. 
-    <span class="venue">Dialogues on Digital Society (Sage)</span>.
-</div>
-
-<div class="pub-item">
-    <span class="pub-tag">Journal Article | 2024</span>
-    <strong>World Internet Conference and China’s Promotion of Cyber Sovereignty</strong>. 
-    <span class="venue">ELTE Law Journal</span>, 2024(2), pp. 109-126.
-</div>
-
-<footer>
-    <p style="text-align: center;">&copy; 2024-2026 Berlin Institute for Digital Strategy (BIDS).</p>
+<footer style="margin-top: 80px; text-align: center; font-size: 0.8em; color: var(--meta);">
+    &copy; 2024-2026 Berlin Institute for Digital Strategy. | Built with Open-Science Principles.
 </footer>
+
 </body>
 </html>
