@@ -10,28 +10,28 @@
         
         header { border-bottom: 2px solid var(--primary); padding-bottom: 20px; margin-bottom: 40px; }
         .logo-container { display: flex; flex-direction: column; }
-        .logo-main { font-size: 2.4em; font-weight: 800; color: var(--primary); letter-spacing: 1.5px; line-height: 1; }
-        .logo-sub { font-size: 0.9em; font-weight: 600; color: var(--meta); text-transform: uppercase; letter-spacing: 1px; margin-top: 8px; }
+        .logo-main { font-size: 2.6em; font-weight: 900; color: var(--primary); letter-spacing: 2px; line-height: 1; }
+        .logo-sub { font-size: 0.85em; font-weight: 700; color: var(--meta); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 10px; }
         
         nav { margin-top: 25px; display: flex; gap: 30px; }
-        nav a { font-weight: 700; text-transform: uppercase; font-size: 0.8em; color: var(--text); text-decoration: none; transition: 0.2s; }
-        nav a:hover { color: var(--accent); }
+        nav a { font-weight: 700; text-transform: uppercase; font-size: 0.8em; color: var(--text); text-decoration: none; border-bottom: 2px solid transparent; }
+        nav a:hover { border-bottom: 2px solid var(--accent); }
 
-        .hero { margin: 70px 0; }
-        .hero h1 { font-size: 2.2em; color: var(--primary); margin-bottom: 25px; letter-spacing: -0.5px; line-height: 1.2; }
-        .hero p { font-size: 1.1em; color: #444; max-width: 800px; text-align: justify; }
+        .hero { margin: 80px 0; }
+        .hero h1 { font-size: 2.4em; color: var(--primary); margin-bottom: 25px; letter-spacing: -0.5px; }
+        .hero p { font-size: 1.15em; color: #444; max-width: 800px; text-align: justify; border-left: 5px solid var(--light); padding-left: 25px; }
 
-        .section-title { font-size: 1.1em; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 10px; margin: 60px 0 30px; text-transform: uppercase; letter-spacing: 1.5px; }
+        .section-title { font-size: 1.1em; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 10px; margin: 60px 0 30px; text-transform: uppercase; letter-spacing: 2px; }
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-        .card h3 { margin-top: 0; color: var(--primary); font-size: 1em; text-transform: uppercase; border-left: 3px solid var(--accent); padding-left: 12px; }
-        .card p { font-size: 0.9em; color: #555; margin-left: 15px; }
+        .card h3 { margin-top: 0; color: var(--primary); font-size: 0.95em; text-transform: uppercase; letter-spacing: 1px; }
+        .card p { font-size: 0.9em; color: #555; line-height: 1.7; }
 
-        .news-item { margin-bottom: 30px; }
-        .news-date { font-size: 0.75em; font-weight: 800; color: var(--accent); text-transform: uppercase; }
-        .news-title { display: block; font-size: 1.2em; font-weight: 700; margin: 5px 0; color: var(--primary); text-decoration: none; }
+        .news-item { margin-bottom: 40px; }
+        .news-tag { display: inline-block; font-size: 0.7em; font-weight: 800; color: #fff; background: var(--accent); padding: 2px 8px; border-radius: 2px; text-transform: uppercase; margin-bottom: 10px; }
+        .news-title { display: block; font-size: 1.25em; font-weight: 700; color: var(--primary); text-decoration: none; }
         
-        footer { margin-top: 100px; padding: 40px 0; border-top: 1px solid #eee; font-size: 0.85em; color: var(--meta); }
-        .contact-box { background: var(--light); padding: 20px; border-radius: 4px; margin-top: 20px; }
+        footer { margin-top: 120px; padding: 40px 0; border-top: 3px solid var(--primary); font-size: 0.85em; color: var(--meta); }
+        .contact-box { margin-top: 20px; font-weight: 600; color: var(--primary); }
     </style>
 </head>
 <body>
@@ -42,49 +42,49 @@
         <div class="logo-sub">Berlin Institute for Digital Strategy</div>
     </div>
     <nav>
-        <a href="#analysis">Strategic Analysis</a>
-        <a href="#methodology">Methodology</a>
+        <a href="#monitor">Data Monitor</a>
+        <a href="#capabilities">Methods</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <section class="hero">
-    <h1>Navigating Regulatory Friction in a Fragmented Digital World.</h1>
-    <p>The <strong>Berlin Institute for Digital Strategy (BIDS)</strong> is an independent intelligence hub dedicated to auditing the intersection of technology, law, and geopolitics. We deliver evidence-based assessments on <strong>export controls, digital sovereignty, and cross-border regulatory risks</strong> to support strategic decision-making in an era of technological decoupling.</p>
+    <h1>Evidence-Based Intelligence for Digital Geopolitics.</h1>
+    <p>The Berlin Institute for Digital Strategy (BIDS) is an independent hub specializing in <strong>Computational Geopolitics</strong>. We leverage high-scale NLP pipelines and relational data modeling to audit the structural shifts in global digital governance, technology alignments, and regulatory friction points.</p>
 </section>
 
-<h2 id="capabilities" class="section-title">Institutional Capabilities</h2>
+<h2 id="capabilities" class="section-title">Methodological Infrastructure</h2>
 <div class="grid">
     <div class="card">
-        <h3>Strategic Auditing</h3>
-        <p>Systematic monitoring of non-Western digital regulatory landscapes, utilizing custom NLP pipelines to identify emerging compliance risks and strategic pivots.</p>
+        <h3>NLP Policy Auditing</h3>
+        <p>Automated semantic analysis of multi-lingual policy corpora to identify longitudinal discursive shifts and regulatory pivots in non-Western markets.</p>
     </div>
     <div class="card">
-        <h3>Geopolitical Intelligence</h3>
-        <p>Mapping institutional alignments and technological dependencies to provide actionable risk assessments for cross-border digital operations.</p>
+        <h3>SNA Mapping</h3>
+        <p>Social Network Analysis (SNA) applied to institutional and corporate ecosystems to track technological dependencies and strategic alignments.</p>
     </div>
 </div>
 
-<h2 id="analysis" class="section-title">Selected Briefings</h2>
+<h2 id="monitor" class="section-title">Latest Intelligence Briefings</h2>
 <div class="news-item">
-    <span class="news-date">Strategic Briefing | Mar 2026</span>
-    <a href="#" class="news-title">Sino-Russian Strategic Complementarity in Cyber Governance</a>
-    <p style="font-size: 0.9em; color: #666;">Analyzing the discursive convergence in joint cyber-security frameworks.</p>
+    <div class="news-tag">NLP Analysis</div>
+    <a href="#" class="news-title">Discursive Convergence: Sino-Russian Cyber Sovereignty Alignment (2022-2026)</a>
+    <p style="font-size: 0.9em; color: #666; margin-top: 8px;">Quantifying the semantic overlap in 5,000+ joint declarations and strategic policy documents.</p>
 </div>
 
 <div class="news-item">
-    <span class="news-date">Policy Analysis | Feb 2026</span>
-    <a href="#" class="news-title">Digital Sovereignty: Competing Logics of EU and China</a>
-    <p style="font-size: 0.9em; color: #666;">A comparative study of cross-border data flow and regulatory autonomy.</p>
+    <div class="news-tag">Data Audit</div>
+    <a href="#" class="news-title">Cross-Border Friction: NLP Mapping of EU-China Data Regulations</a>
+    <p style="font-size: 0.9em; color: #666; margin-top: 8px;">A structural comparison of data localization requirements through automated legislative auditing.</p>
 </div>
 
 <footer id="contact">
     <div class="contact-box">
-        <p><strong>Grace X. Yang</strong> | Principal Investigator</p>
-        <p>Berlin Institute for Digital Strategy (BIDS)</p>
-        <p>Email: <a href="mailto:Graceyang_pro@outlook.com">Graceyang_pro@outlook.com</a></p>
+        Grace X. Yang, Principal Investigator
     </div>
-    <p style="margin-top: 30px;">&copy; 2026 BIDS | Berlin, Germany.</p>
+    <p>Berlin Institute for Digital Strategy (BIDS)</p>
+    <p>Email: <a href="mailto:Graceyang_pro@outlook.com" style="color: var(--accent);">Graceyang_pro@outlook.com</a></p>
+    <p style="margin-top: 30px; opacity: 0.6;">&copy; 2026 BIDS | Berlin, Germany. Independent Intelligence for a Fragmented Digital World.</p>
 </footer>
 
 </body>
