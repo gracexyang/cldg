@@ -4,80 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIDS | Berlin Institute for Digital Strategy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
     <style>
+        /* 恢复你最舒服的字体配置 */
         :root { 
-            --primary: #1a2b3c; /* 深蓝：专业、稳重 */
+            --primary: #121212; 
             --accent: #004a99; 
             --bg: #ffffff; 
-            --subtle: #f8fafc; 
-            --text: #334155; 
-            --meta: #64748b; 
-            --code-bg: #e2e8f0;
-        }
-        body { 
-            font-family: "Inter", -apple-system, sans-serif; 
-            line-height: 1.7; 
-            color: var(--text); 
-            max-width: 1100px; 
-            margin: 0 auto; 
-            padding: 60px 20px; 
-            background-color: var(--bg);
+            --subtle: #f4f7f9; 
+            --text: #2c3e50; 
+            --meta: #7f8c8d; 
         }
         
-        /* Header 布局优化：左对齐 Logo，右对齐导航 */
+        body { 
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            line-height: 1.8; 
+            color: var(--text); 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+        }
+
         header { 
-            border-bottom: 1px solid #e2e8f0; 
-            padding-bottom: 30px; 
-            margin-bottom: 60px; 
+            border-bottom: 2px solid var(--primary); 
+            padding-bottom: 20px; 
+            margin-bottom: 50px; 
             display: flex; 
             justify-content: space-between; 
-            align-items: center; 
+            align-items: center; /* 改为居中对齐，配合图标高度 */
         }
-        .brand-container { display: flex; align-items: center; gap: 20px; }
-        .logo-img { width: 65px; height: 65px; object-fit: contain; }
+
+        .brand-container { display: flex; align-items: center; gap: 15px; }
+        /* 这里的路径已经改为 assets/ 文件夹 */
+        .logo-img { width: 60px; height: 60px; object-fit: contain; }
+        
         .logo-box { line-height: 1.1; }
-        .logo-main { font-size: 2.2em; font-weight: 900; letter-spacing: -1px; color: var(--primary); }
-        .logo-sub { font-size: 0.8em; text-transform: uppercase; letter-spacing: 1.2px; color: var(--meta); font-weight: 600; }
+        .logo-main { font-size: 2.5em; font-weight: 900; letter-spacing: -1.5px; color: var(--primary); }
+        .logo-sub { font-size: 0.85em; text-transform: uppercase; letter-spacing: 1.5px; color: var(--meta); font-weight: 600; }
         
-        nav a { margin-left: 30px; text-decoration: none; font-size: 0.85em; font-weight: 700; text-transform: uppercase; color: var(--meta); transition: 0.3s; }
-        nav a:hover { color: var(--accent); }
+        nav a { margin-left: 25px; text-decoration: none; font-size: 0.8em; font-weight: 700; text-transform: uppercase; color: var(--text); opacity: 0.7; }
+        nav a:hover { opacity: 1; color: var(--accent); }
         
-        /* Hero 区域：突出技术实验室属性 */
-        .hero { margin: 100px 0; max-width: 850px; }
-        .hero h1 { font-size: 2.8em; line-height: 1.1; color: var(--primary); margin-bottom: 25px; font-weight: 800; }
-        .hero p { font-size: 1.25em; color: #475569; margin-bottom: 30px; }
-        .hero strong { color: var(--primary); }
+        .hero { margin: 80px 0; border-left: 5px solid var(--accent); padding-left: 30px; }
+        .hero h1 { font-size: 2.4em; line-height: 1.2; color: var(--primary); margin-bottom: 15px; }
+        .hero p { font-size: 1.15em; max-width: 800px; color: #444; }
+
+        .hero-tech-stack { font-size: 0.85em; margin-top: 20px; }
+        code { background: #eee; padding: 2px 6px; border-radius: 3px; font-family: monospace; }
+
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 50px 0; }
+        .card { background: var(--subtle); padding: 30px; border-radius: 4px; border-top: 3px solid var(--primary); }
+        .card h3 { margin-top: 0; font-size: 1.1em; text-transform: uppercase; letter-spacing: 1px; }
+
+        .briefs-section { background: #fff; border: 1px solid #eee; padding: 30px; margin: 60px 0; }
+        .brief-tag { color: var(--accent); font-weight: 800; font-size: 0.7em; text-transform: uppercase; }
+        .brief-item { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #ddd; }
+
+        footer { margin-top: 100px; padding-top: 40px; border-top: 1px solid #eee; font-size: 0.9em; }
+        .impressum { background: #f9f9f9; padding: 20px; margin-top: 30px; font-size: 0.85em; line-height: 1.5; }
         
-        .hero-tech-stack { font-size: 0.9em; background: var(--subtle); padding: 15px 20px; border-radius: 6px; display: inline-block; border: 1px solid #e2e8f0; }
-        code { font-family: "SFMono-Regular", Consolas, monospace; color: var(--accent); font-weight: 600; }
-
-        /* 网格布局：展示核心资产 */
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 80px 0; }
-        .card { background: var(--subtle); padding: 35px; border-radius: 8px; border-top: 4px solid var(--primary); transition: transform 0.3s; }
-        .card:hover { transform: translateY(-5px); }
-        .card h3 { margin-top: 0; font-size: 1em; text-transform: uppercase; letter-spacing: 1.5px; color: var(--primary); }
-        .card p { font-size: 0.95em; color: var(--meta); }
-
-        /* 内容板块：为 KSK 提供证据 */
-        .section-header { text-transform: uppercase; font-size: 0.9em; letter-spacing: 2px; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 30px; color: var(--primary); font-weight: 800; }
-        .briefs-section { background: #fff; border: 1px solid #f1f5f9; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
-        .brief-item { margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #f1f5f9; }
-        .brief-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-        .brief-tag { color: var(--accent); font-weight: 800; font-size: 0.75em; text-transform: uppercase; background: #ebf5ff; padding: 4px 8px; border-radius: 4px; }
-        .brief-item strong { display: block; margin-top: 10px; font-size: 1.2em; color: var(--primary); }
-
-        /* 页脚：强化 PI 个人品牌与法务信息 */
-        footer { margin-top: 120px; padding-top: 50px; border-top: 1px solid #e2e8f0; }
-        .pi-info { font-weight: 800; font-size: 1.2em; color: var(--primary); }
-        .impressum { background: var(--subtle); padding: 25px; margin-top: 40px; border-radius: 6px; font-size: 0.85em; line-height: 1.6; color: var(--meta); border: 1px solid #e2e8f0; }
-        .impressum a { color: var(--accent); text-decoration: none; font-weight: 600; }
-
         @media (max-width: 768px) {
             header { flex-direction: column; align-items: flex-start; gap: 20px; }
-            nav { margin-left: -30px; }
             .grid { grid-template-columns: 1fr; }
-            .hero h1 { font-size: 2em; }
         }
     </style>
 </head>
@@ -85,7 +72,7 @@
 
 <header>
     <div class="brand-container">
-        <img src="bids-logo.png" alt="BIDS Logo" class="logo-img">
+        <img src="assets/bids-logo.png" alt="BIDS Logo" class="logo-img">
         <div class="logo-box">
             <div class="logo-main">BIDS</div>
             <div class="logo-sub">Berlin Institute for Digital Strategy</div>
@@ -94,58 +81,55 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
-        <a href="https://observer.bids-berlin.org">Observer</a> <a href="mailto:Graceyang_pro@outlook.com">Contact</a>
+        <a href="mailto:Graceyang_pro@outlook.com">Contact</a>
     </nav>
 </header>
 
-<main>
-    <section class="hero">
-        <h1>Computational Laboratory for Global Digital Governance.</h1>
-        <p>BIDS is an <strong>independent research laboratory</strong> dedicated to the strategic analysis of global digital governance. We integrate <strong>computational tools with multi-disciplinary perspectives</strong> to audit the evolving technical and political landscapes of the digital age.</p>
-        <div class="hero-tech-stack">
-            <code>Status: Live Monitoring</code> | <code>Method: Data-Driven Auditing</code> | <code>Focus: Evidence-Based Strategy</code>
-        </div>
-    </section>
+<section class="hero">
+    <h1>Computational Laboratory for Global Digital Governance.</h1>
+    <p>BIDS is an <strong>independent research laboratory</strong> dedicated to the strategic analysis of global digital governance. We integrate <strong>computational tools with multi-disciplinary perspectives</strong> to audit the evolving technical and political landscapes of the digital age.</p>
+    <p class="hero-tech-stack">
+        <code>Status: Live Monitoring</code> | <code>Method: Data-Driven Auditing</code> | <code>Scope: Global Policy & Strategy</code>
+    </p>
+</section>
 
-    <div class="grid">
-        <div class="card">
-            <h3>Proprietary NLP Pipelines</h3>
-            <p>Custom-built Python workflows for high-precision policy extraction and semantic shift detection in large-scale multi-lingual corpora.</p>
-        </div>
-        <div class="card">
-            <h3>Strategic Auditing</h3>
-            <p>Quantitative intelligence and evidence-based insights for decision-makers in the fields of cyber-sovereignty and digital diplomacy.</p>
-        </div>
+<div class="grid">
+    <div class="card">
+        <h3>Proprietary NLP Pipelines</h3>
+        <p>Advanced Python workflows for multi-lingual policy extraction and ML-enhanced semantic shift detection in official discourse.</p>
     </div>
+    <div class="card">
+        <h3>Strategic Auditing</h3>
+        <p>Evidence-based insights for global governance stakeholders, grounded in large-scale textual corpora analysis.</p>
+    </div>
+</div>
 
-    <h2 class="section-header">Latest Insights & Technical Briefs</h2>
-    <section class="briefs-section">
-        <div class="brief-item">
-            <span class="brief-tag">Technical Audit | March 2026</span>
-            <strong>Foundational vs. Functional: Competing Logics of Digital Sovereignty</strong>
-            <p style="font-size: 0.95em; margin-top: 10px;">A comparative computational audit of strategic narratives from Beijing and Brussels.</p>
-        </div>
-        <div class="brief-item">
-            <span class="brief-tag">Global Order | Feb 2026</span>
-            <strong>Chinese Academic Response to the Russia-Ukraine War</strong>
-            <p style="font-size: 0.95em; margin-top: 10px;">Examining the impact of geopolitical shifts on digital policy discourse through NLP.</p>
-        </div>
-    </section>
-</main>
+<h2 style="text-transform: uppercase; font-size: 1em; letter-spacing: 2px;">Latest Insights & Technical Briefs </h2>
+<section class="briefs-section">
+    <div class="brief-item">
+        <span class="brief-tag">Technical Audit | March 2026</span><br>
+        <strong>Foundational vs. Functional: Competing Logics of Digital Sovereignty</strong>
+        <p style="font-size: 0.9em; margin-top: 5px;">A comparative NLP auditing of policy texts from Beijing and Brussels.</p>
+    </div>
+    <div class="brief-item">
+        <span class="brief-tag">Global Order | Feb 2026</span><br>
+        <strong>Chinese Academic Response to the Russia-Ukraine War</strong>
+        <p style="font-size: 0.9em; margin-top: 5px;">Examination of geopolitical impact on digital discourse through computational methods.</p>
+    </div>
+</section>
 
 <footer>
-    <div class="pi-info">Grace X. Yang</div>
-    <p style="margin: 5px 0 0 0;"><strong>Principal Investigator</strong>, BIDS</p>
-    <p style="font-size: 0.9em; color: var(--meta);">Academic Researcher | Computational Social Scientist</p>
+    <div style="font-weight: 800; font-size: 1.1em;">Grace X. Yang</div>
+    <p><strong>Principal Investigator</strong>, BIDS</p>
     
     <div class="impressum">
-        <strong>Impressum / Legal Notice (TMG § 5)</strong><br>
-        Operator & Responsible for Content: Grace X. Yang<br>
+        <strong>Impressum (Legal Notice - TMG § 5)</strong><br>
+        Operator: Grace X. Yang<br>
         Location: Berlin-Adlershof, Germany<br>
-        Contact: <a href="mailto:Graceyang_pro@outlook.com">Graceyang_pro@outlook.com</a><br>
-        <em>BIDS is an independent initiative dedicated to open-science, technical innovation, and strategic inquiry into the digital age.</em>
+        Contact: <a href="mailto:Graceyang_pro@outlook.com" style="color: var(--accent); text-decoration: none;">Graceyang_pro@outlook.com</a><br>
+        BIDS is an independent technical initiative dedicated to open-science and strategic inquiry.
     </div>
-    <p style="margin-top: 40px; opacity: 0.5; font-size: 0.8em;">&copy; 2024-2026 BIDS. All rights reserved.</p>
+    <p style="margin-top: 30px; opacity: 0.5;">&copy; 2024-2026 BIDS. All rights reserved.</p>
 </footer>
 
 </body>
